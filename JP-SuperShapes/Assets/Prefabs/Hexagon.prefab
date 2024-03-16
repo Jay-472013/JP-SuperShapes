@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3600819354773241564}
   - component: {fileID: -5009728264803172176}
   - component: {fileID: 9140297137969886968}
+  - component: {fileID: -1788156495223962183}
+  - component: {fileID: 4739209928796732922}
   m_Layer: 0
   m_Name: Hexagon
   m_TagString: Untagged
@@ -285,3 +287,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e8373552587ed4bab05c035de8de2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: -1788156495223962183}
+  shrinkSpeed: 3
+--- !u!50 &-1788156495223962183
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3600819354773241567}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &4739209928796732922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3600819354773241567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b769aa40b77e84bab5a665839ac8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapePrefabs:
+  - {fileID: 2876814049339442106, guid: d147164ba903349459e2b69461634b0a, type: 3}
+  - {fileID: 3600819354773241567}
+  - {fileID: 3417114003247287460, guid: e9a3ccafa5cb3c243b896ab583de24d7, type: 3}
+  - {fileID: 5608908145742263239, guid: a7a20bb749b744044bb235ea1e406d4b, type: 3}
+  spawnDelay: 2
+  spawnTime: 3
