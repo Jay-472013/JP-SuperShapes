@@ -24,6 +24,8 @@ public class Shape : MonoBehaviour
         if(transform.localScale.x <= 0.05f)
         {
             Destroy(gameObject);
+
+            Score.score++;
         }
     
         
